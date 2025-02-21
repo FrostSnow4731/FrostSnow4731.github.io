@@ -133,7 +133,7 @@ style.textContent = `
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-                url('https://i.imgur.com/q9BYdnw.jpeg') no-repeat center center;
+                url('http://FrostSnow4731.github.io/images/background.jpg') no-repeat center center;
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
