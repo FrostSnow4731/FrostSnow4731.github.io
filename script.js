@@ -75,7 +75,7 @@ document.querySelectorAll('.academy').forEach(academy => {
               <ul style='list-style: none; text-align: center;'>
                 ${data[academyName][group].map(student => `
                   <li>
-                    <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 50%;" />
+                    <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 246px; margin-right: 203px; border-radius: 0%;" />
                     ${student.name}
                   </li>
                 `).join('')}
