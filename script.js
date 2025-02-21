@@ -1,8 +1,7 @@
 const data = {
   "아비도스": [
     { name: "스나오오카미 시로코", image: "https://FrostSnow4731.github.io/images/shiroko.png" },
-      ]
-  }
+  ]
 };
 
 document.getElementById('intro').addEventListener('click', () => {
