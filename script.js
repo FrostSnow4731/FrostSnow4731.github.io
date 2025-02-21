@@ -1,7 +1,3 @@
-const characterImages = {
-  "스나오오카미 시로코": "?https://FrostSnow4731.github.io/images/shiroko.png"
-  };
-
 const data = {
   "총학생회": [
     "나나가미 린",
@@ -266,32 +262,7 @@ const data = {
 };
 
 document.getElementById('intro').addEventListener('click', () => {
-    const container = document.getElementById('intro');
-    container.innerHTML = ''; // 기존 콘텐츠 제거
-
-    // 데이터에서 각 그룹별로 이미지를 생성하여 추가
-    for (let group in data) {
-        const groupTitle = document.createElement("h3");
-        groupTitle.textContent = group;
-        container.appendChild(groupTitle);
-
-        const groupContainer = document.createElement("div");
-        groupContainer.classList.add("image-container");
-
-        data[group].forEach(character => {
-            const imageUrl = characterImages[character];
-            if (imageUrl) {
-                const imageElement = document.createElement("img");
-                imageElement.src = imageUrl;
-                imageElement.alt = character;
-                imageElement.classList.add("image-item");
-
-                groupContainer.appendChild(imageElement);
-            }
-        });
-
-        container.appendChild(groupContainer);
-    }
+  document.getElementById('intro').classList.add('hidden');
 });
 
 let currentPopup = null; // 현재 팝업을 추적
