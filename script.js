@@ -189,6 +189,6 @@ li img {
 
 li p {
   margin-top: 5px;
-}
-
+  }
+`;
 document.head.appendChild(style);
