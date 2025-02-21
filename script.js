@@ -75,7 +75,7 @@ document.querySelectorAll('.academy').forEach(academy => {
               <ul style='list-style: none; text-align: center;'>
                 ${data[academyName][group].map(student => `
                   <li>
-                    <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 246px; margin-right: 203px; border-radius: 0%;" />
+                    <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 50px; margin-right: 50px; border-radius: 50%;" />
                     ${student.name}
                   </li>
                 `).join('')}
@@ -102,7 +102,7 @@ document.querySelectorAll('.academy').forEach(academy => {
         students.forEach(student => {
           const listItem = document.createElement('li');
           listItem.innerHTML = `
-            <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 50%;" />
+            <img src="${student.imageUrl}" alt="${student.name}" style="width: 246px; height: 203px; margin-right: 10px; border-radius: 0%;" />
             ${student.name}
           `;
           studentList.appendChild(listItem);
