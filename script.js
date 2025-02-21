@@ -13,13 +13,13 @@ const data = {
     "프라나 🔒"
   ],
   "아비도스": [
-    "타카나시 호시노 🔒",
-    "이자요이 노노미 🔒",
-    "스나오오카미 시로코",
-     "https://FrostSnow4731.github.io/images/shiroko.png
-    "쿠로미 세리카",
-    "오쿠소라 아야네",
-    "스나오오카미 시로코(테러)"
+    const characterImages = {
+     "타카나시 호시노 🔒",
+     "이자요이 노노미 🔒",
+     "스나오오카미 시로코": "https://FrostSnow4731.github.io/images/shiroko.png",
+     "쿠로미 세리카",
+     "오쿠소라 아야네",
+     "스나오오카미 시로코(테러)"
   ],
   "게헨나": {
     "만마전": [
