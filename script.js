@@ -1,6 +1,6 @@
 const data = {
   "총학생회": [
-    { name: "나나가미 린", imageUrl: "https://FrostSnow4731.github.io/images/shiroko.png" }
+    { name: "나나가미 린", imageUrl: "https://FrostSnow4731.github.io/images/rin.png" }
   ]
 };
 
