@@ -137,14 +137,14 @@ style.textContent = `
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-                url('http://FrostSnow4731.github.io/images/background.jpg') no-repeat center center;
+                url('http://FrostSnow4731.github.io/images/background 4.png') no-repeat center center;
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     max-width: 100%;
-    max-height: 855px;
+    max-height: 100$;
     overflow-y: auto;
     text-align: center;
     display: flex;
