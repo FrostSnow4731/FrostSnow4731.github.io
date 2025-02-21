@@ -1,3 +1,7 @@
+const characterImages = {
+  "스나오오카미 시로코": "https://FrostSnow4731.github.io/images/shiroko.png" 
+  };
+
 const data = {
   "총학생회": [
     "나나가미 린",
@@ -261,25 +265,6 @@ const data = {
   }
 };
 
-document.getElementById('intro').addEventListener('click', () => {
-  document.getElementById('intro').classList.add('hidden');
-});
-
-let currentPopup = null; // 현재 팝업을 추적
-
-function closePopup() {
-  if (currentPopup) {
-    currentPopup.classList.remove('show'); // 'show' 클래스를 제거하여 닫기 애니메이션 적용
-    currentPopup.classList.add('hide'); // 'hide' 클래스를 추가
-    setTimeout(() => {
-      if (currentPopup && currentPopup.parentNode) {
-        currentPopup.parentNode.removeChild(currentPopup); // 애니메이션 후 팝업 제거
-        currentPopup = null; // 현재 팝업 초기화
-      }
-    }, 300); // 애니메이션 시간 (0.3초) 후 제거
-  }
-}
-
 document.querySelectorAll('.academy').forEach(academy => {
   academy.addEventListener('click', () => {
     if (currentPopup) {
@@ -330,7 +315,15 @@ document.querySelectorAll('.academy').forEach(academy => {
               <button class="back-button">돌아가기</button>
               <h2>${group}</h2>
               <ul style='list-style: none; text-align: center;'>
-                ${data[academyName][group].map(s => `<li>${s}</li>`).join('')}
+                ${data[academyName][group].map(student => {
+                  // 학생 이름을 이미지로 바꾸기
+                  const imageUrl = characterImages[student]; // 이미지 URL 가져오기
+                  if (imageUrl) {
+                    return `<li><img src="${imageUrl}" alt="${student}" style="width: 50px; height: 50px;" /></li>`;
+                  } else {
+                    return `<li>${student}</li>`;
+                  }
+                }).join('')}
               </ul>
             `;
             const backButton = document.querySelector('.back-button');
@@ -353,7 +346,12 @@ document.querySelectorAll('.academy').forEach(academy => {
 
         students.forEach(student => {
           const listItem = document.createElement('li');
-          listItem.textContent = student;
+          const imageUrl = characterImages[student]; // 이미지 URL 가져오기
+          if (imageUrl) {
+            listItem.innerHTML = `<img src="${imageUrl}" alt="${student}" style="width: 50px; height: 50px;" />`;
+          } else {
+            listItem.textContent = student;
+          }
           studentList.appendChild(listItem);
         });
 
@@ -361,7 +359,6 @@ document.querySelectorAll('.academy').forEach(academy => {
       } else {
         contentDiv.innerHTML += `<p>학생 명부가 없습니다.</p>`;
       }
-
 
       // 팝업 표시 애니메이션
       setTimeout(() => {
