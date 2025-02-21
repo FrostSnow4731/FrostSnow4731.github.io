@@ -1,3 +1,7 @@
+const characterImages = {
+  "스나오오카미 시로코": "?https://FrostSnow4731.github.io/images/shiroko.png"
+  };
+
 const data = {
   "총학생회": [
     "나나가미 린",
