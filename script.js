@@ -1,8 +1,27 @@
 const data = {
   "총학생회": [
-    { name: "나나가미 린", image: "https:/FrostSnow4731.github.io/images/shiroko.png" }
+    { name: "나나가미 린", imageUrl: "https:/FrostSnow4731.github.io/images/shiroko.png" }
   ]
 };
+
+document.getElementById('intro').addEventListener('click', () => {
+  document.getElementById('intro').classList.add('hidden');
+});
+
+let currentPopup = null; // 현재 팝업을 추적
+
+function closePopup() {
+  if (currentPopup) {
+    currentPopup.classList.remove('show'); // 'show' 클래스를 제거하여 닫기 애니메이션 적용
+    currentPopup.classList.add('hide'); // 'hide' 클래스를 추가
+    setTimeout(() => {
+      if (currentPopup && currentPopup.parentNode) {
+        currentPopup.parentNode.removeChild(currentPopup); // 애니메이션 후 팝업 제거
+        currentPopup = null; // 현재 팝업 초기화
+      }
+    }, 300); // 애니메이션 시간 (0.3초) 후 제거
+  }
+}
 
 document.querySelectorAll('.academy').forEach(academy => {
   academy.addEventListener('click', () => {
@@ -54,7 +73,12 @@ document.querySelectorAll('.academy').forEach(academy => {
               <button class="back-button">돌아가기</button>
               <h2>${group}</h2>
               <ul style='list-style: none; text-align: center;'>
-                ${data[academyName][group].map(s => `<li>${s}</li>`).join('')}
+                ${data[academyName][group].map(student => `
+                  <li>
+                    <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 50%;" />
+                    ${student.name}
+                  </li>
+                `).join('')}
               </ul>
             `;
             const backButton = document.querySelector('.back-button');
@@ -77,25 +101,10 @@ document.querySelectorAll('.academy').forEach(academy => {
 
         students.forEach(student => {
           const listItem = document.createElement('li');
-          listItem.style.display = 'flex';
-          listItem.style.alignItems = 'center';
-          listItem.style.justifyContent = 'center';
-          listItem.style.marginBottom = '10px';
-
-          // 이미지 태그 생성
-          const image = document.createElement('img');
-          image.src = student.image;
-          image.alt = student.name;
-          image.style.width = '40px'; // 이미지 크기 설정
-          image.style.height = '40px'; // 이미지 크기 설정
-          image.style.marginRight = '10px'; // 이미지와 이름 사이 간격 설정
-
-          // 이름 텍스트 생성
-          const name = document.createElement('span');
-          name.textContent = student.name;
-
-          listItem.appendChild(image);
-          listItem.appendChild(name);
+          listItem.innerHTML = `
+            <img src="${student.imageUrl}" alt="${student.name}" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 50%;" />
+            ${student.name}
+          `;
           studentList.appendChild(listItem);
         });
 
@@ -112,9 +121,6 @@ document.querySelectorAll('.academy').forEach(academy => {
     }
   });
 });
-
-
-
 
 
 // CSS for popup with close button
@@ -138,39 +144,34 @@ style.textContent = `
     overflow-y: auto;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    transform: translate(-50%, -60%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translate(-50%, -60%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .popup.show {
-    opacity: 1;
-    transform: translate(-50%, -50%);
+    opacity: 1; /* 나타날 때 */
+    transform: translate(-50%, -50%); /* 원래 위치로 이동 */
   }
 
   .popup.hide {
-    opacity: 0;
-    transform: translate(-50%, -60%);
+    opacity: 0; /* 사라질 때 */
+    transform: translate(-50%, -60%); /* 다시 위로 이동 */
   }
 
-  /* 이미지 스타일 */
-  img {
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-
+  /* 뒤로가기 버튼 스타일 */
   .back-button {
     display: inline-block;
-    margin: 10px auto;
+    margin: 10px auto; /* 버튼을 중앙 정렬 */
     background: #007BFF;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 14px; /* 버튼 글씨 크기 */
   }
 
   .back-button:hover {
