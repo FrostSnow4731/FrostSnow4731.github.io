@@ -184,8 +184,8 @@ style.textContent = `
 }
 
 .popup ul li img {
-  width: 150px;
-  height: 150px;
+  width: 196px;
+  height: 196px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
