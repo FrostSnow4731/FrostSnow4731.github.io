@@ -167,11 +167,11 @@ style.textContent = `
   transform: translate(-50%, -60%);
 }
 
-/* 동아리 학생 리스트에 넓은 격자형 레이아웃 적용 */
+/* 동아리 학생 리스트에 격자형 레이아웃 적용 */
 .popup ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 각 이미지를 더 작은 크기로 설정 */
-  gap: 20px; /* 항목들 간의 간격 */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 각 이미지를 더 작은 크기로 설정 */
+  gap: 15px; /* 항목들 간의 간격 */
   padding: 0;
   list-style: none;
   text-align: center;
@@ -185,8 +185,8 @@ style.textContent = `
 }
 
 .popup ul li img {
-  width: 120px; /* 이미지 너비를 더 작게 설정 */
-  height: 120px; /* 이미지 높이를 더 작게 설정 */
+  width: 150px; /* 이미지 너비를 더 작게 설정 */
+  height: 150px; /* 이미지 높이를 더 작게 설정 */
   border-radius: 50%; /* 원형 이미지 */
   margin-bottom: 10px;
 }
@@ -217,13 +217,13 @@ style.textContent = `
   }
 
   .popup ul {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 이미지 크기를 더 작게 */
-    gap: 15px; /* 더 작은 간격 */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 이미지 크기를 더 작게 설정 */
+    gap: 10px; /* 더 작은 간격 */
   }
 
   .popup ul li img {
-    width: 100px; /* 이미지 크기를 더 작게 */
-    height: 100px; /* 이미지 크기를 더 작게 */
+    width: 120px; /* 이미지 크기를 더 작게 설정 */
+    height: 120px; /* 이미지 크기를 더 작게 설정 */
   }
 
   .back-button {
@@ -240,13 +240,13 @@ style.textContent = `
   }
 
   .popup ul {
-    grid-template-columns: 1fr; /* 모바일에서 한 열로 표시 */
-    gap: 10px; /* 더 작은 간격 */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* 모바일에서 한 열로 표시 */
+    gap: 8px; /* 더 작은 간격 */
   }
 
   .popup ul li img {
-    width: 80px; /* 이미지 크기를 더욱 작게 설정 */
-    height: 80px; /* 이미지 크기를 더욱 작게 설정 */
+    width: 100px; /* 이미지 크기를 더욱 작게 설정 */
+    height: 100px; /* 이미지 크기를 더욱 작게 설정 */
   }
 
   .back-button {
