@@ -143,7 +143,7 @@ style.textContent = `
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  max-width: 90%;
+  width: calc(80vw + 200px); /* 뷰포트 너비의 80%와 200px을 더한 값 */
   max-height: 80%;
   overflow-y: auto;
   text-align: center;
