@@ -130,56 +130,81 @@ document.querySelectorAll('.academy').forEach(academy => {
 // CSS for popup with close button
 const style = document.createElement('style');
 style.textContent = `
-  /* 팝업 스타일 및 애니메이션 */
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-                url('http://FrostSnow4731.github.io/images/background 4.png') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    max-width: 90%;
-    max-height: 80%;
-    overflow-y: auto;
-    text-align: center;
-    display: flex;
+/* 팝업 스타일 및 애니메이션 */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+              url('http://FrostSnow4731.github.io/images/background 4.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  text-align: center;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   opacity: 0;
   transform: translate(-50%, -60%);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  }
+}
 
-  .popup.show {
-    opacity: 1; /* 나타날 때 */
-    transform: translate(-50%, -50%); /* 원래 위치로 이동 */
-  }
+/* 팝업 표시될 때 애니메이션 */
+.popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
 
-  .popup.hide {
-    opacity: 0; /* 사라질 때 */
-    transform: translate(-50%, -60%); /* 다시 위로 이동 */
-  }
+.popup.hide {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+}
 
-  /* 뒤로가기 버튼 스타일 */
-  .back-button {
-    display: inline-block;
-    margin: 10px auto; /* 버튼을 중앙 정렬 */
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px; /* 버튼 글씨 크기 */
-  }
+/* 동아리 학생 리스트에 그리드 레이아웃 적용 */
+.popup ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 이미지 크기에 맞춰 그리드 열 자동 생성 */
+  gap: 20px; /* 항목들 간의 간격 */
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
 
-  .back-button:hover {
-    background: #0056b3;
-  }
+/* 각 이미지 스타일 */
+.popup ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup ul li img {
+  width: 150px; /* 이미지 너비 */
+  height: 150px; /* 이미지 높이 */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* 뒤로가기 버튼 스타일 */
+.back-button {
+  display: inline-block;
+  margin: 10px auto;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
 `;
 document.head.appendChild(style);
