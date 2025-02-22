@@ -170,7 +170,7 @@ style.textContent = `
 .popup ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 각 이미지를 더 작은 크기로 설정 */
-  gap: 15px;
+  gap: 18px;
   padding: 0;
   list-style: none;
   text-align: center;
