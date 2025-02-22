@@ -8,9 +8,8 @@
     /* 다운로드한 gyo 폰트를 @font-face로 등록 */
     @font-face {
       font-family: 'ggg';  /* 폰트 이름을 'gyo'로 설정 */
-      src: url('fonts/ggg.woff2') format('woff2'),
-           url('fonts/ggg.woff') format('woff'),
-           url('fonts/ggg.ttf') format('truetype'); /* 폰트 파일 경로 */
+      src: url('http://FrostSnow4731.github.io/images/Title_Medium.woff') format('woff'),
+           url('http://FrostSnow4731.github.io/images/gyo.ttf') format('truetype'); /* 폰트 파일 경로 */
       font-weight: normal;
       font-style: normal;
     }
@@ -24,13 +23,13 @@
     /* General reset */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'gyo', sans-serif; /* 'ggg' 폰트 적용 */
       background-color: #a3a3a3;
       text-align: center;
     }
 
     /* Header */
-    header {
+     header {
       background-color: #AFEEEE;
       color: white;
       text-align: center;
@@ -40,7 +39,7 @@
     }
 
     /* Academy grid layout */
-    .academy-container {
+  .academy-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 150px;
@@ -138,10 +137,10 @@
       object-fit: contain;
     }
 
-    .academy p {
+ .academy p {
       margin: 10px 0 0;
       font-weight: bold;
-      font-family: 'Diphylleia', sans-serif;
+      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
     }
     .popup-header {
   display: flex;
@@ -152,12 +151,11 @@
   border-radius: 10px 10px 0 0; /* 모서리를 둥글게 */
 }
 
-.popup-header h2 {
-  margin: 0;
-  color: white;
-  font-family: 'Diphylleia', sans-serif;
-  font-weight: normal;
-}
+    .popup-header h2 {
+      margin: 0;
+      color: white;
+      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
+      font-weight: normal;
 
 .close-button {
   all: unset; /* 기본 스타일 초기화 */
@@ -191,10 +189,11 @@
   text-align: center; /* 텍스트 중앙 정렬 */
 }
 
-.popup ul li {
-  margin: 3px 0; /* 리스트 간격 조정 */
-  font-family: 'Grandiflora One', serif;
-  font-weight: bold;
+   .popup ul li {
+      margin: 3px 0;
+      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
+      font-weight: bold;
+    }
 }
 
 
