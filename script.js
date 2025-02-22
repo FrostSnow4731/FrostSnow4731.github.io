@@ -106,7 +106,7 @@ document.querySelectorAll('.academy').forEach(academy => {
         students.forEach(student => {
           const listItem = document.createElement('li');
           listItem.innerHTML = `
-            <img src="${student.imageUrl}" alt="${student.name}" style="width: 236px; height: 193px; margin-right: 10px; border-radius: 0%;" />
+            <img src="${student.imageUrl}" alt="${student.name}" style="width: 206px; height: 163px; margin-right: 10px; border-radius: 0%;" />
             ${student.name}
           `;
           studentList.appendChild(listItem);
@@ -143,8 +143,8 @@ style.textContent = `
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    max-width: 200vw;
-    max-height: 80vh;
+    max-width: 90%;
+    max-height: 80%;
     overflow-y: auto;
     text-align: center;
     display: flex;
