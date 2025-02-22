@@ -166,11 +166,11 @@ style.textContent = `
   transform: translate(-50%, -60%);
 }
 
-/* 동아리 학생 리스트에 그리드 레이아웃 적용 */
+/* 동아리 학생 리스트에 넓은 격자형 레이아웃 적용 */
 .popup ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 이미지 크기에 맞춰 그리드 열 자동 생성 */
-  gap: 20px; /* 항목들 간의 간격 */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 각 이미지를 더 큰 크기로 설정 */
+  gap: 30px; /* 항목들 간의 간격 */
   padding: 0;
   list-style: none;
   text-align: center;
@@ -184,9 +184,9 @@ style.textContent = `
 }
 
 .popup ul li img {
-  width: 150px; /* 이미지 너비 */
-  height: 150px; /* 이미지 높이 */
-  border-radius: 50%;
+  width: 200px; /* 이미지 너비를 더 크게 설정 */
+  height: 200px; /* 이미지 높이를 더 크게 설정 */
+  border-radius: 50%; /* 원형 이미지 */
   margin-bottom: 10px;
 }
 
