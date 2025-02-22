@@ -143,8 +143,8 @@ style.textContent = `
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  width: 60vw;
-  max-width: 95%;
+  width: 80vw; /* 모바일에서 더 작은 크기 */
+  max-width: 95%; /* 최대 너비는 화면의 95% */
   height: 70vh; /* 고정된 높이 설정 */
   overflow-y: auto; /* 세로 스크롤이 필요할 경우 추가 */
   text-align: center;
@@ -170,8 +170,8 @@ style.textContent = `
 /* 동아리 학생 리스트에 넓은 격자형 레이아웃 적용 */
 .popup ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 각 이미지를 더 큰 크기로 설정 */
-  gap: 30px; /* 항목들 간의 간격 */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 각 이미지를 더 작은 크기로 설정 */
+  gap: 20px; /* 항목들 간의 간격 */
   padding: 0;
   list-style: none;
   text-align: center;
@@ -185,8 +185,8 @@ style.textContent = `
 }
 
 .popup ul li img {
-  width: 200px; /* 이미지 너비를 더 크게 설정 */
-  height: 200px; /* 이미지 높이를 더 크게 설정 */
+  width: 120px; /* 이미지 너비를 더 작게 설정 */
+  height: 120px; /* 이미지 높이를 더 작게 설정 */
   border-radius: 50%; /* 원형 이미지 */
   margin-bottom: 10px;
 }
@@ -202,6 +202,57 @@ style.textContent = `
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+/* 반응형 모바일 설정 */
+@media (max-width: 768px) {
+  .popup {
+    width: 90vw; /* 모바일에서 팝업 너비 더 넓게 */
+    height: 80vh; /* 팝업 높이를 더 키움 */
+    padding: 15px; /* 패딩을 약간 줄임 */
+  }
+
+  .popup ul {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 이미지 크기를 더 작게 */
+    gap: 15px; /* 더 작은 간격 */
+  }
+
+  .popup ul li img {
+    width: 100px; /* 이미지 크기를 더 작게 */
+    height: 100px; /* 이미지 크기를 더 작게 */
+  }
+
+  .back-button {
+    font-size: 12px; /* 버튼 텍스트 크기 줄임 */
+    padding: 4px 8px; /* 버튼 크기 줄임 */
+  }
+}
+
+@media (max-width: 480px) {
+  .popup {
+    width: 95vw; /* 더 작은 화면에서 팝업 너비를 95%로 확장 */
+    height: 90vh; /* 팝업을 더 키움 */
+    padding: 10px; /* 패딩을 더 줄임 */
+  }
+
+  .popup ul {
+    grid-template-columns: 1fr; /* 모바일에서 한 열로 표시 */
+    gap: 10px; /* 더 작은 간격 */
+  }
+
+  .popup ul li img {
+    width: 80px; /* 이미지 크기를 더욱 작게 설정 */
+    height: 80px; /* 이미지 크기를 더욱 작게 설정 */
+  }
+
+  .back-button {
+    font-size: 10px; /* 버튼 크기 더 작게 */
+    padding: 3px 6px; /* 버튼 크기 줄임 */
+  }
 }
 
 .back-button:hover {
