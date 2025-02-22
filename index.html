@@ -3,17 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Grandiflora+One&display=swap" rel="stylesheet">
   <title>공석표</title>
   <style>
-    /* 다운로드한 gyo 폰트를 @font-face로 등록 */
-    @font-face {
-      font-family: 'ggg';  /* 폰트 이름을 'gyo'로 설정 */
-      src: url('http://FrostSnow4731.github.io/images/Title_Medium.woff') format('woff'),
-           url('http://FrostSnow4731.github.io/images/gyo.ttf') format('truetype'); /* 폰트 파일 경로 */
-      font-weight: normal;
-      font-style: normal;
-    }
-
 
   /* Add this to your existing CSS */
   #intro.hidden {
@@ -23,13 +15,13 @@
     /* General reset */
     body {
       margin: 0;
-      font-family: 'gyo', sans-serif; /* 'ggg' 폰트 적용 */
+      font-family: Arial, sans-serif;
       background-color: #a3a3a3;
       text-align: center;
     }
 
     /* Header */
-     header {
+    header {
       background-color: #AFEEEE;
       color: white;
       text-align: center;
@@ -39,7 +31,7 @@
     }
 
     /* Academy grid layout */
-  .academy-container {
+    .academy-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 150px;
@@ -137,10 +129,10 @@
       object-fit: contain;
     }
 
- .academy p {
+    .academy p {
       margin: 10px 0 0;
       font-weight: bold;
-      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
+      font-family: 'Diphylleia', sans-serif;
     }
     .popup-header {
   display: flex;
@@ -151,11 +143,12 @@
   border-radius: 10px 10px 0 0; /* 모서리를 둥글게 */
 }
 
-    .popup-header h2 {
-      margin: 0;
-      color: white;
-      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
-      font-weight: normal;
+.popup-header h2 {
+  margin: 0;
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: normal;
+}
 
 .close-button {
   all: unset; /* 기본 스타일 초기화 */
@@ -189,11 +182,10 @@
   text-align: center; /* 텍스트 중앙 정렬 */
 }
 
-   .popup ul li {
-      margin: 3px 0;
-      font-family: 'gyo', sans-serif; /* 'gyo' 폰트 적용 */
-      font-weight: bold;
-    }
+.popup ul li {
+  margin: 3px 0; /* 리스트 간격 조정 */
+  font-family: 'Grandiflora One', serif;
+  font-weight: bold;
 }
 
 
