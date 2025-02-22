@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <!-- Do Hyeon 폰트 추가 -->
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
   <title>공석표</title>
   <style>
-
-  /* Add this to your existing CSS */
-  #intro.hidden {
-    transform: translateY(-100%);
-    transition: transform 0.6s ease-out;
-  }
+    /* Do Hyeon Regular 폰트를 적용하는 클래스 */
+    .do-hyeon-regular {
+      font-family: "Do Hyeon", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
     /* General reset */
     body {
       margin: 0;
@@ -213,11 +215,11 @@
     <header>목록</header>
   <div class="academy-container">
     <!-- First Row -->
-    <div class="academy" id="student-council">
+    <div class="academy do-hyeon-regular" id="student-council">
       <img src="http://FrostSnow4731.github.io/images/sch.png" alt="총학생회">
       <p>총학생회</p>
     </div>
-    <div class="academy" id="schale">
+    <div class="academy do-hyeon-regular" id="schale">
       <img src="http://FrostSnow4731.github.io/images/arpr.png" alt="샬레">
       <p>샬레</p>
     </div>
