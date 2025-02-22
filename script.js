@@ -9,7 +9,7 @@ const data = {
     { name: "하이네", imageUrl: "https://FrostSnow4731.github.io/images/haine.png" }
   ],
   "샬레": [
-    { name: "선생님", imageUrl: "https://FrostSnow4731.github.io/images/ssn.jpg" },
+    { name: "선생님", imageUrl: "https://FrostSnow4731.github.io/images/ssn.png" },
     { name: "아로나", imageUrl: "https://FrostSnow4731.github.io/images/arona.png" },
     { name: "프라나", imageUrl: "https://FrostSnow4731.github.io/images/prna.png" }
  ]
