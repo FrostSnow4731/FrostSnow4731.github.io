@@ -143,8 +143,8 @@ style.textContent = `
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    max-width: 100vw;
-    max-height: 100vh;
+    max-width: 80vw;
+    max-height: 80vh;
     overflow-y: auto;
     text-align: center;
     display: flex;
