@@ -211,7 +211,7 @@ style.textContent = `
 @media (max-width: 768px) {
   .popup {
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-                url('http://FrostSnow4731.github.io/images/mobile-background.png') no-repeat center center;
+                url('http://FrostSnow4731.github.io/images/background 2.png') no-repeat center center;
     background-size: cover;
     width: 90vw; /* 모바일에서 팝업 너비 더 넓게 */
     height: 80vh; /* 팝업 높이를 더 키움 */
