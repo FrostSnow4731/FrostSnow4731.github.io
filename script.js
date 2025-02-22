@@ -145,8 +145,8 @@ style.textContent = `
   z-index: 1000;
   width: 60vw;
   max-width: 95%;
-  max-height: 90vh; /* 화면의 90% 높이로 최대 높이 설정 */
-  overflow-y: auto; /* 스크롤이 필요할 경우 자동으로 추가 */
+  height: 70vh; /* 고정된 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤이 필요할 경우 추가 */
   text-align: center;
   display: flex;
   flex-direction: column;
