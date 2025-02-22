@@ -222,8 +222,8 @@ style.textContent = `
   }
 
   .popup ul li img {
-    width: 120px; /* 이미지 크기를 더 작게 설정 */
-    height: 120px; /* 이미지 크기를 더 작게 설정 */
+    width: 110px; /* 이미지 크기를 더 작게 설정 */
+    height: 110px; /* 이미지 크기를 더 작게 설정 */
   }
 
   .back-button {
@@ -245,8 +245,8 @@ style.textContent = `
   }
 
   .popup ul li img {
-    width: 100px; /* 이미지 크기를 더욱 작게 설정 */
-    height: 100px; /* 이미지 크기를 더욱 작게 설정 */
+    width: 90px; /* 이미지 크기를 더 작게 설정 */
+    height: 90px; /* 이미지 크기를 더 작게 설정 */
   }
 
   .back-button {
