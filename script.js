@@ -130,7 +130,6 @@ document.querySelectorAll('.academy').forEach(academy => {
 // CSS for popup with close button
 const style = document.createElement('style');
 style.textContent = `
-/* 팝업 스타일 및 애니메이션 */
 .popup {
   position: fixed;
   top: 50%;
@@ -143,10 +142,10 @@ style.textContent = `
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  width: 80vw; /* 모바일에서 더 작은 크기 */
-  max-width: 95%; /* 최대 너비는 화면의 95% */
-  height: 70vh; /* 고정된 높이 설정 */
-  overflow-y: auto; /* 세로 스크롤이 필요할 경우 추가 */
+  width: 80vw;
+  max-width: 95%;
+  height: 70vh;
+  overflow-y: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -171,7 +170,7 @@ style.textContent = `
 .popup ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 각 이미지를 더 작은 크기로 설정 */
-  gap: 15px; /* 항목들 간의 간격 */
+  gap: 15px;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -185,9 +184,9 @@ style.textContent = `
 }
 
 .popup ul li img {
-  width: 150px; /* 이미지 너비를 더 작게 설정 */
-  height: 150px; /* 이미지 높이를 더 작게 설정 */
-  border-radius: 50%; /* 원형 이미지 */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
@@ -211,6 +210,9 @@ style.textContent = `
 /* 반응형 모바일 설정 */
 @media (max-width: 768px) {
   .popup {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+                url('http://FrostSnow4731.github.io/images/mobile-background.png') no-repeat center center;
+    background-size: cover;
     width: 90vw; /* 모바일에서 팝업 너비 더 넓게 */
     height: 80vh; /* 팝업 높이를 더 키움 */
     padding: 15px; /* 패딩을 약간 줄임 */
