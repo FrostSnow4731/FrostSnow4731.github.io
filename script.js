@@ -143,9 +143,10 @@ style.textContent = `
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  width: calc(80vw + 200px); /* 뷰포트 너비의 80%와 200px을 더한 값 */
-  max-height: 80%;
-  overflow-y: auto;
+  width: 60vw;
+  max-width: 95%;
+  max-height: 90vh; /* 화면의 90% 높이로 최대 높이 설정 */
+  overflow-y: auto; /* 스크롤이 필요할 경우 자동으로 추가 */
   text-align: center;
   display: flex;
   flex-direction: column;
