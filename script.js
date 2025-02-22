@@ -4,7 +4,9 @@ const data = {
     { name: "유라키 모모카", imageUrl: "https://FrostSnow4731.github.io/images/momoka.png" },
     { name: "이와비츠 아유무", imageUrl: "https://FrostSnow4731.github.io/images/ayumu.png" },
     { name: "시라누이 카야", imageUrl: "https://FrostSnow4731.github.io/images/kaya.png" },
-    { name: "오키 아오이", imageUrl: "https://FrostSnow4731.github.io/images/aoi.png" }
+    { name: "오키 아오이", imageUrl: "https://FrostSnow4731.github.io/images/aoi.png" },
+    { name: "스모모", imageUrl: "https://FrostSnow4731.github.io/images/sumomo.png" },
+    { name: "하이네", imageUrl: "https://FrostSnow4731.github.io/images/haine.png" }
   ]
 };
 
