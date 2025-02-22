@@ -141,6 +141,58 @@
       font-weight: bold;
       font-family: 'Diphylleia', sans-serif;
     }
+    .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87CEEB; /* 하늘색 배경 */
+  padding: 10px;
+  border-radius: 10px 10px 0 0; /* 모서리를 둥글게 */
+}
+.popup-header h2 {
+  margin: 0;
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: normal;
+}
+
+.close-button {
+  all: unset; /* 기본 스타일 초기화 */
+  cursor: pointer;
+  margin-left: 10px;
+  width: 20px; /* 버튼 크기 조정 */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* 위치 설정 */
+  top: 4px; /* 높이 조정 (음수 값으로 위로 올릴 수도 있음) */
+}
+
+.close-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-header img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.popup ul {
+  list-style: none; /* 불필요한 점 제거 */
+  padding: 0;
+  margin: 5px 0; /* 간격을 줄임 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.popup ul li {
+  margin: 3px 0; /* 리스트 간격 조정 */
+  font-family: 'Grandiflora One', serif;
+  font-weight: bold;
+}
 
   </style>
 </head>
