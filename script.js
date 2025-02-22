@@ -14,12 +14,12 @@ const data = {
     { name: "프라나", imageUrl: "https://FrostSnow4731.github.io/images/prna.png" }
   ],
    "아비도스": [
-    "타카나시 호시노 ",
-    "이자요이 노노미 ",
+    { name: "타카나시 호시노", imageUrl: "https://FrostSnow4731.github.io/images/Hoshino.png" },
+    { name: "이자요이 노노미", imageUrl: "https://FrostSnow4731.github.io/images/shiroko.png" },
     { name: "스나오오카미 시로코", imageUrl: "https://FrostSnow4731.github.io/images/shiroko.png" },
-    "쿠로미 세리카",
-    "오쿠소라 아야네",
-    "스나오오카미 시로코(테러)"
+    { name: "쿠로미 세리카", imageUrl: "https://FrostSnow4731.github.io/images/Serika.png" },
+    { name: "오쿠소라 아야네", imageUrl: "https://FrostSnow4731.github.io/images/shiroko.png" },
+    { name: "스나오오카미 시로코(테러)", imageUrl: "https://FrostSnow4731.github.io/images/shiroko.png" },
   ]
 };
 
