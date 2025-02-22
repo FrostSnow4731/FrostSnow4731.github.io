@@ -7,7 +7,11 @@ const data = {
     { name: "오키 아오이", imageUrl: "https://FrostSnow4731.github.io/images/aoi.png" },
     { name: "스모모", imageUrl: "https://FrostSnow4731.github.io/images/sumomo.png" },
     { name: "하이네", imageUrl: "https://FrostSnow4731.github.io/images/haine.png" }
-  ]
+  ],
+  "샬레": [
+    { name: "아로나", imageUrl: "https://FrostSnow4731.github.io/images/sumomo.png" },
+    { name: "프라나", imageUrl: "https://FrostSnow4731.github.io/images/haine.png" }
+ ]
 };
 
 document.getElementById('intro').addEventListener('click', () => {
